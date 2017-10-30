@@ -18,6 +18,7 @@
   var SilverChallengeCh10 = App.SilverChallengeCh10;
   var silverChallengeCh10 = new SilverChallengeCh10(RANGE_SELECTOR, LABEL_SELECTOR);
 
+  silverChallengeCh10.setInitialStrengthColor();
   silverChallengeCh10.addStrengthChangeHandler();
   /* END SILVER CHALLENGE */
 
