@@ -28,11 +28,26 @@ body {
   font-family: sans-serif;
   font-size: 12px;
   background-color: tan;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: 0 1 auto;
+}
+
+main {
+  flex: 1 1 auto;
+
+
+  display: flex;
+  flex-direction: column;
 }
 
 h1.title {
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  padding: 10px 0px;
   font-family: lakeshore;
   text-align: center;
   background-color: SkyBlue;
@@ -40,26 +55,69 @@ h1.title {
   text-shadow: 1px 1px 2px black;
 }
 
+a[href="#"] {
+  text-decoration: none;
+}
+
+.otter-detail-container {
+  flex: 1 1 auto;
+  order: 2;
+}
+
+.otter-detail-image-wrapper {
+  position: relative;
+}
+
+.otter-detail-container span {
+  font-family: airstreamregular;
+  font-size: 48px;
+  text-shadow: 1px 1px 2px white;
+  position:absolute;
+  left: 20%;
+  bottom: -24px;
+}
+
+.otter-detail-image {
+  width: 100%;
+}
+
+.otter-list-container {
+  flex: 0 1 auto;
+}
+
 .otter-list {
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+  font-size: 18px;
+  margin: 0px 0px;
+  padding: 0px 0px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  overflow-x: auto;
 }
 
 .otter-list-item {
+  margin: 0px 0px;
   min-width: 120px;
   max-width: 120px;
-  display: inline-block;
+  flex: 0 1 auto;
+  justify-content: space-between;
 }
 
 .otter-list-item img {
   width: 120px;
+  margin: 0px 0px;
+  display: block;
 }
+
 .otter-list-item span {
   background-color: pink;
   color: white;
   font-weight: bold;
 
+  width: 120px;
   display: block;
   margin: 0px 0px;
   padding: 4px 10px;
