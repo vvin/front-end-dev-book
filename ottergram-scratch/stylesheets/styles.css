@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'lakeshore';
+  src: url('fonts/LAKESHOR-webfont.eot');
+  src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embeedded-opentype'),
+      url('fonts/LAKESHOR-webfont.woff') format('woff'),
+      url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
+      url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'airstreamregular';
+  src: url('fonts/Airstream-webfont.eot');
+  src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Airstream-webfont.woff') format('woff'),
+       url('fonts/Airstream-webfont.ttf') format('truetype'),
+       url('fonts/Airstream-webfont.svg#airstreamregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 12px;
+  background-color: tan;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: 0 1 auto;
+}
+
+main {
+  flex: 1 1 auto;
+
+
+  display: flex;
+  flex-direction: column;
+}
+
+h1.title {
+  margin: 0px;
+  padding: 10px 0px;
+  font-family: lakeshore;
+  text-align: center;
+  background-color: SkyBlue;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+a[href="#"] {
+  text-decoration: none;
+}
+
+.otter-detail-container {
+  flex: 1 1 auto;
+  order: 2;
+}
+
+.otter-detail-image-wrapper {
+  position: relative;
+}
+
+.otter-detail-container span {
+  font-family: airstreamregular;
+  font-size: 48px;
+  text-shadow: 1px 1px 2px white;
+  position:absolute;
+  left: 20%;
+  bottom: -24px;
+}
+
+.otter-detail-image {
+  width: 100%;
+}
+
+.otter-list-container {
+  flex: 0 1 auto;
+}
+
+.otter-list {
+  list-style-type: none;
+  font-size: 18px;
+  margin: 0px 0px;
+  padding: 0px 0px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  overflow-x: auto;
+}
+
+.otter-list-item {
+  margin: 0px 0px;
+  min-width: 120px;
+  max-width: 120px;
+  flex: 0 1 auto;
+  justify-content: space-between;
+}
+
+.otter-list-item img {
+  width: 120px;
+  margin: 0px 0px;
+  display: block;
+}
+
+.otter-list-item span {
+  background-color: pink;
+  color: white;
+  font-weight: bold;
+
+  width: 120px;
+  display: block;
+  margin: 0px 0px;
+  padding: 4px 10px;
+}
